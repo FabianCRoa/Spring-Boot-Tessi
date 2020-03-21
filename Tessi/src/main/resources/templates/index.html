@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<title>TessiLogin</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="../css/bootstrap.minOK.css">
+<link rel="stylesheet" href="../css/animateOK.css">
+<link rel="stylesheet" href="../css/font-awesome.minOK.css">
+<link rel="stylesheet" href="../css/owl.theme.css">
+<link rel="stylesheet" href="../css/owl.carousel.css">
+    
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+<!-- Main css -->
+<link rel="stylesheet" href="../css/style.css">
+
+<!-- Google Font -->
+<link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet' type='text/css'>
+
+</head>
+<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+
+<!-- =========================
+     PRE LOADER       
+============================== -->
+<div class="preloader">
+
+	<div class="sk-rotating-plane"></div>
+
+</div>
+
+
+<!-- =========================
+     NAVIGATION LINKS     
+============================== -->
+<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+	<div class="container">
+
+		<!-- navbar header -->
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			
+			 <a href="#" class="navbar-brand">TessiLogin</a>
+
+		</div>
+
+		<div class="collapse navbar-collapse">
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#intro" class="smoothScroll">Inicio</a></li>
+				<li><a href="#overview" class="smoothScroll">¿Quienes Somos?</a></li>
+				<li><a href="#speakers" class="smoothScroll">Acerca de Nosotros</a></li>
+				<li><a href="#program" class="smoothScroll">Portafolio</a></li>
+				<li><a href="#register" class="smoothScroll">Ingresar</a></li>
+				<li><a href="#venue" class="smoothScroll">Especialidades</a></li>
+				<!--<li><a href="#sponsors" class="smoothScroll">Sponsors</a></li> -->
+				<li><a href="#contact" class="smoothScroll">Contacto</a></li>
+			</ul>
+
+		</div>
+
+	</div>
+</div>
+
+
+<!-- =========================
+    INTRO SECTION   
+============================== -->
+<section id="intro" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+				<h3 class="wow bounceIn" data-wow-delay="0.9s">Business Process Services
+en la era digital</h3>
+				<h1 class="wow fadeInUp" data-wow-delay="1.6s">Tessi</h1>
+				<a href="#overview" class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s">LEER MAS</a>
+				<a href="#register" class="btn btn-lg btn-danger smoothScroll wow fadeInUp" data-wow-delay="2.3s">INGRESAR</a>
+                                <form th:action="@{/registration}" method="get">
+                                    <button class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s" type="Submit">REGISTRARSE</button>
+                                </form>
+			</div>
+
+
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    OVERVIEW SECTION   
+============================== -->
+<section id="overview" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.6s">
+				<h3>¿Quienes Somos? </h3>
+				<p align="justify">Tessi, con una experiencia de más de 40 años en el ámbito de múltiples procesos de Back-Office para las Entidades Financieras, ha hecho una gran apuesta por dotar a sus eficentes modelos industriales de la más avanzada tecnología con un total de más de 300 ingenieros y numerosas soluciones propias en el ámbito de Gestión de Contenidos GED-ECM (Docubase): Tessi EDI, Tessi Contract, Tessi Facture, además de la plataforma para la Gestión de Procesos Oncustomer, siempre con el más profundo conocimiento del negocio y el objetivo de utilizar la tecnología para eficientar los procesos con la máxima seguridad, trazabilidad y satisfacción al cliente.</p>
+			</div>
+					
+			<div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.9s">
+				<img src="../images/overview-img.jpg" class="img-responsive" alt="Overview">
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    DETAIL SECTION   
+============================== -->
+<section id="detail" class="parallax-section">
+		<div class="container">
+		<div class="row">
+			<div class="wow fadeInDown " data-wow-delay="0.1s">
+	<h3> Nuestro poder en números</h3>
+			<h5>Contamos con la experiencia adecuada para atender altos volúmenes de operación. Te compartimos algunas de nuestras cifras anuales en: Colombia</h5>
+<br><br>
+
+			<div class="wow fadeInLeft col-md-3 col-sm-1" data-wow-delay="0.3s">
+				<i class="fa fa-group"></i>
+				<h3>80.000 <br>Bienes <br>Administrados</h3>
+			
+			</div>
+			<div class="wow fadeInDown col-md-3 col-sm-1" data-wow-delay="0.6s">
+				<i class="fa fa-university"></i>
+				<h3>10.000 <br>Legalizaciones de Hipoteca</h3> 
+		
+			</div>
+
+			<div class="wow fadeInUp col-md-3 col-sm-1" data-wow-delay="0.6s">
+				<i class="fa fa-car"></i>
+				<h3>5.400 <br> Traspasos de Vehiculos</h3>
+			
+			</div>
+
+			<div class="wow fadeInRight col-md-3 col-sm-1" data-wow-delay="0.3s">
+				<i class="fa fa-file"></i>
+				<h3>22.000 <br> Tramites de <br>Gestoria</h3>
+				
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    VIDEO SECTION   
+============================== -->
+<section id="video" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="wow fadeInUp col-md-6 col-sm-10" data-wow-delay="1.3s">
+				<h2>Informate!</h2>
+				<h3>Acerca de... Cancelacion de hipotecas Bancolombia.</h3>
+				<p>Cuando compras una casa con ayuda de un crédito hipotecario, ésta queda como garantía de pago, que es la obligación aplicada a la casa para indicar que ya está comprometida con una deuda.</p>
+
+				<p>Por esta situación, el banco es el propietario de la casa hasta que la hipoteca quede saldada y se realice su cancelación, de lo contrario la casa no podrá ser vendida o rentada por ti pues legalmente la propiedad no es tuya. Por ello, el último trámite a realizar para liberar tu casa es la cancelación de hipoteca.</p>
+			</div>
+			<div class="wow fadeInUp col-md-6 col-sm-10" data-wow-delay="1.6s">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="../images/Hipoteca.mp4" allowfullscreen></iframe>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    SPEAKERS SECTION   
+============================== -->
+<section id="speakers" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-4 wow bounceIn">
+				<div class="section-title">
+					<h2>Acerca de Nosotros</h2>
+					<p>Somos un grupo conformado en el programa de Analisis y Desarrollo de Sistemas de Informacion proporcionado por Servicio Nacional de Aprendizaje SENA .</p>
+				</div>
+			</div>
+
+
+
+
+			<!-- Testimonial Owl Carousel section
+			================================================== -->
+			<div id="owl-speakers" class="owl-carousel">
+
+				
+
+				<div class="item wow fadeInLeft col-md-3 col-sm-3" data-wow-delay="0.6s">
+					<div class="speakers-wrapper">
+						<img src="../images/Fabian.jpeg" style="width: 596px; height: 260px;" class="img-responsive" alt="speakers">
+							<div class="speakers-thumb">
+								<h3>Fabian Roa</h3>
+								<h6> Diseñador Web / Desarrollador</h6>
+							</div>
+					</div>
+				</div>
+
+				<div class="item wow fadeInLeft col-md-3 col-sm-3" data-wow-delay="0.6s">
+					<div class="speakers-wrapper">
+						<img src="../images/Felipe.jpg" style="width: 596px; height: 260px;" class="img-responsive" alt="speakers">
+							<div class="speakers-thumb">
+								<h3>Felipe Ramirez</h3>
+								<h6>Desarrollador / Analista</h6>
+							</div>
+					</div>
+				</div>
+
+				<div class="item wow fadeInRight col-md-3 col-sm-3" data-wow-delay="0.6s">
+					<div class="speakers-wrapper">
+						<img src="../images/Sneyder.jpeg" style="width: 596px; height: 260px;" class="img-responsive" alt="speakers">
+							<div class="speakers-thumb">
+								<h3>Sneyder Mosquera</h3>
+								<h6>Diseñador Web / Desarrollador</h6>
+							</div>
+					</div>
+				</div>
+
+				<div class="item wow fadeInRight col-md-3 col-sm-3" data-wow-delay="0.6s">
+					<div class="speakers-wrapper">
+						<img src="../images/Marlon.jpeg" style="width: 596px; height: 260px;" class="img-responsive" alt="speakers">
+							<div class="speakers-thumb">
+								<h3>Marlon Sierra</h3>
+								<h6>Desarrollador / Analista</h6>
+							</div>
+					</div>
+				</div>
+
+				
+				
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    PROGRAM SECTION   
+============================== -->
+<section id="program" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="0.6s">
+				<div class="section-title">
+					<h2>Portafolio</h2>
+					<p>Algunos de nuestros clientes destacados.</p>
+				</div>
+			</div>
+
+			<div class="wow fadeInUp col-md-10 col-sm-10" data-wow-delay="0.9s">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li class="active"><a href="#fday" aria-controls="fday" role="tab" data-toggle="tab">PAGINA 1</a></li>
+					<li><a href="#sday" aria-controls="sday" role="tab" data-toggle="tab">PAGINA 2</a></li>
+				</ul>
+				<!-- tab panes -->
+				<div class="tab-content">
+
+					<div role="tabpanel" class="tab-pane active" id="fday">
+						<!-- program speaker here -->
+						<div class="col-md-2 col-sm-2">
+							<img src="../images/BBVA.jpg" class="img-responsive" style="width: 120px; height: 120px;" alt="program">
+						</div>
+						<div class="col-md-10 col-sm-10">
+							
+							<h3>BBVA</h3>
+							<h4>Cliente destacado</h4>
+							<p>Banco Bilbao Vizcaya Argentaria es un banco español con sede social en Bilbao, presidido por Carlos Torres Vila. Es una de las mayores entidades financieras del mundo y está presente principalmente en España, México, América del Sur, Estados Unidos y Turquía.</p>
+						</div>
+
+						<!-- program divider -->
+						<div class="program-divider col-md-12 col-sm-12"></div>
+
+						<!-- program speaker here -->
+						<div class="col-md-2 col-sm-2">
+							<img src="../images/itau.png" class="img-responsive" style="width: 120px; height: 120px;" alt="program">
+						</div>
+						<div class="col-md-10 col-sm-10">
+							
+							<h3>Itaú</h3>
+							<h4>Cliente destacado</h4>
+							<p>El Banco Itaú S.A. es un banco brasileño, brazo de Itaú Holding, con sede en Sao Paulo, en el estado homónimo, y uno de los mayores de América​ y Hemisferio Sur, después de su fusión con Unibanco. Sus activos consolidados son de 504.000 millones de dólares.</p>
+						</div>
+
+						<!-- program divider -->
+						<div class="program-divider col-md-12 col-sm-12"></div>
+
+						<!-- program speaker here -->
+						<div class="col-md-2 col-sm-2">
+							<img src="../images/Banco Popular.jpg" class="img-responsive" style="width: 120px; height: 120px;" alt="program">
+						</div>
+						<div class="col-md-10 col-sm-10">
+							
+							<h3>Banco Popular</h3>
+							<h4>Cliente destacado</h4>
+							<p>El Banco Popular es una entidad financiera colombiana perteneciente al Grupo Aval Acciones y Valores, con sede principal en la ciudad de Bogotá que lleva una trayectoria de más de sesenta años.</p>
+						</div>
+					</div>
+
+					<div role="tabpanel" class="tab-pane" id="sday">
+						<!-- program speaker here -->
+						<div class="col-md-2 col-sm-2">
+							<img src="../images/Caja Social.png" class="img-responsive" style="width: 120px; height: 120px;" alt="program">
+						</div>
+						<div class="col-md-10 col-sm-10">
+							
+							<h3>Banco Caja Social</h3>
+							<h4>Cliente destacado</h4>
+							<p>Banco Caja Social es una empresa de la Fundación Grupo Social que mediante su actividad bancaria busca contribuir a la superación de las causas estructurales de la pobreza en Colombia, para promover una sociedad justa, solidaria, productiva y en paz, razón de ser de toda la organización.</p>
+						</div>
+
+						<!-- program divider -->
+						<div class="program-divider col-md-12 col-sm-12"></div>
+
+						<!-- program speaker here -->
+						<div class="col-md-2 col-sm-2">
+							<img src="../images/Sufi.png" class="img-responsive" style="width: 120px; height: 120px;" alt="program">
+						</div>
+						<div class="col-md-10 col-sm-10">
+							
+							<h3>Sufi</h3>
+							<h4>Cliente destacado</h4>
+							<p>La filial del Grupo Bancolombia trabaja en la implementación de una nueva línea de crédito mediante la cual las personas puedan encontrar en los comercios una alternativa de financiación para comprar productos y servicios desde los $500.000.</p>
+						</div>
+
+						<!-- program divider -->
+						<div class="program-divider col-md-12 col-sm-12"></div>
+
+						<!-- program speaker here -->
+						<div class="col-md-2 col-sm-2">
+							<img src="../images/Davivienda.jpg" class="img-responsive" style="width: 120px; height: 120px;" alt="program">
+						</div>
+						<div class="col-md-10 col-sm-10">
+							
+							<h3>Davivienda</h3>
+							<h4>Cliente destacado</h4>
+							<p>Davivienda es un banco colombiano que desde 1972 presta servicios a personas, empresas y al sector rural. Actualmente pertenece al Grupo Empresarial Bolívar​ y es la tercera entidad de su tipo en el país.​</p>
+						</div>
+					</div>
+
+					</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+   REGISTER SECTION   
+============================== -->
+<section id="register" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="wow fadeInUp col-md-7 col-sm-7" data-wow-delay="0.6s">
+				<h2>Ingrese Aqui</h2>
+				<h3>Ya eres parte de nuestra familia?</h3>
+				<p>Ingresa aqui, si aun no formas parte de esta increible familia registrate  <form th:action="@{/registration}" method="get">
+            <input name="submit" type="submit" class="form-control" id="submit" value="PAGINA DE REGISTRO">
+            </form></p>
+			</div>
+
+			<div class="wow fadeInUp col-md-5 col-sm-5" data-wow-delay="1s">
+				<!--<form action="#" method="post">
+					<select name="cargo" class="form-control">
+						
+					    
+					    <option value="1">Administrador</option>
+					    <option value="2" selected>Empleado</option> 
+					    <option value="3">Coordinador</option>
+					    <option value="4">Gerente</option>
+					</select>
+					<input name="email" type="email" class="form-control" id="email" placeholder="Email">
+					<input name="password" type="password" class="form-control" id="password" placeholder="Contraseña">
+					<div class="col-md-offset-6 col-md-6 col-sm-offset-1 col-sm-10">
+						<input name="submit" type="submit" class="form-control" id="submit" value="INGRESAR">
+					</div>
+				</form> -->
+                                
+                        <form th:action="@{/login}" method="POST" class="form-signin">
+                            <h3 class="form-signin-heading" th:text="Iniciar"></h3>
+                            
+                            <select name="cargo" class="form-control">
+						
+					    
+				<option value="1">Administrador</option>
+				<option value="2" selected>Empleado</option> 
+				<option value="3">Coordinador</option>
+				<option value="4">Gerente</option>
+                            </select>                 
+
+                            <input type="text" id="email" name="email" th:placeholder="Email"
+                                   class="form-control"/> 
+                            <input type="password" th:placeholder="Password"
+                                   id="password" name="password" class="form-control"/> <br/>
+
+                            <div align="center" th:if="${param.error}">
+                                <p style="font-size: 20; color: #FF1C19;">Correo electrónico o contraseña inválida, por favor verifique</p>
+                            </div>
+                            
+                            <div class="col-md-offset-6 col-md-6 col-sm-offset-1 col-sm-10">
+						<input name="submit" type="submit" class="form-control" id="submit" value="INGRESAR">
+					</div>
+                            
+
+                        </form>
+			</div>
+
+			<div class="col-md-1"></div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    FAQ SECTION   
+============================== -->
+<section id="faq" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<!-- Section title
+			================================================== -->
+			<div class="wow bounceIn col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 text-center">
+				<div class="section-title">
+					<h2>Nosotros</h2>
+					<p>Conoce nuestra Mision, Vision y Valores Corporativos.</p>
+				</div>
+			</div>
+
+			<div class="wow fadeInUp col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10" data-wow-delay="0.9s">
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+  					<div class="panel panel-default">
+   						<div class="panel-heading" role="tab" id="headingOne">
+      						<h4 class="panel-title">
+        						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          							 Mision
+        						</a>
+      						</h4>
+    					</div>
+   						<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      						<div class="panel-body">
+        						<p>Gestionar los procesos operativos de nuestros clientes, facilitando el desarrollo de su negocio.</p>
+      						</div>
+   						 </div>
+ 					</div>
+
+    				<div class="panel panel-default">
+   						<div class="panel-heading" role="tab" id="headingTwo">
+      						<h4 class="panel-title">
+        						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          							Vision
+        						</a>
+      						</h4>
+    					</div>
+   						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      						<div class="panel-body">
+                            	<p>Ser líderes en la tercerización de procesos operativos a través de la innovación y tecnología, con el potencial de nuestro equipo humano.</p>
+      						</div>
+   						 </div>
+ 					</div>
+
+ 					<div class="panel panel-default">
+   						<div class="panel-heading" role="tab" id="headingThree">
+      						<h4 class="panel-title">
+        						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          							Valores Corporativos
+        						</a>
+      						</h4>
+    					</div>
+   						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      						<div class="panel-body">
+                            	<ul>
+          <li>
+            <b>Apoyo</b> <p>Impulsamos y ayudamos a los grupos de interés en el cumplimiento de objetivos y metas.</p>
+          </li>
+          <li>
+            <b>Innovación</b> <p>En pro de ser competitivos, este es nuestro valor agregado, buscamos ser sinónimo de cambio y evolución.<p>
+          </li>
+          <li>
+            <b>Calidad</b> <p>Superioridad y excelencia en la ejecución de nuestras actividades. </p>
+          </li>
+          <li>
+            <b>Participación</b> <p>Somos una compañía democrática donde los grupos de interés tienen  incidencia en la toma de decisiones e igualdad de oportunidades.</p>
+          </li>
+          <li>
+            <b>RSE</b> <p>Estamos comprometidos y aportamos al mejoramiento de la realidad social, económica y ambiental de nuestro entorno.</p>
+          </li>
+          <li>
+            <b>Nuestra Gente</b> <p>Nuestras actuaciones están encaminadas a consolidar una cultura orientada al equipo humano.</p>
+          </li>
+        </ul>
+      						</div>
+   						 </div>
+ 					 </div>
+
+ 				 </div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    VENUE SECTION   
+============================== -->
+<section id="venue" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="wow fadeInLeft col-md-offset-1 col-md-5 col-sm-8" data-wow-delay="0.9s">
+				<h2>Especialidades</h2>
+				<p align="justify">Formalización de operaciones de crédito hipotecario y leasing sobre inmuebles, Apoyo especializado a nivel nacional - documental y trámites, Finalización de contratos de leasing, Construcción técnica de inventarios de activos, Cancelación de hipotecas, Administración de activos dados en leasing, Tramitología de gestiones a nivel nacional (Colombia)</p>
+				<h4>Tessi Gestiona</h4>
+  				<h4>Tessi, su aliado de Business
+				Process Services</h4>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    SPONSORS SECTION   
+============================== --
+<section id="sponsors" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="wow bounceIn col-md-12 col-sm-12">
+				<div class="section-title">
+					<h2>Our Sponsors</h2>
+					<p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
+				</div>
+			</div>
+
+			<div class="wow fadeInUp col-md-3 col-sm-6 col-xs-6" data-wow-delay="0.3s">
+				<img src="../images/sponsor-img1.jpg" class="img-responsive" alt="sponsors">	
+			</div>
+
+			<div class="wow fadeInUp col-md-3 col-sm-6 col-xs-6" data-wow-delay="0.6s">
+				<img src="../images/sponsor-img2.jpg" class="img-responsive" alt="sponsors">	
+			</div>
+
+			<div class="wow fadeInUp col-md-3 col-sm-6 col-xs-6" data-wow-delay="0.9s">
+				<img src="../images/sponsor-img3.jpg" class="img-responsive" alt="sponsors">	
+			</div>
+
+			<div class="wow fadeInUp col-md-3 col-sm-6 col-xs-6" data-wow-delay="1s">
+				<img src="../images/sponsor-img4.jpg" class="img-responsive" alt="sponsors">	
+			</div>
+
+		</div>
+	</div>
+</section> -->
+
+
+<!-- =========================
+    CONTACT SECTION   
+============================== -->
+<section id="contact" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="wow fadeInUp col-md-offset-1 col-md-5 col-sm-6 img-responsive" data-wow-delay="0.6s">
+				<div class="contact_des">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.4813805744984!2d-74.12352368523771!3d4.686085596596214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b71c3aab81b%3A0x17ddfc10a65cafe4!2sTessi%20Gestiona%20SAS!5e0!3m2!1ses-419!2sco!4v1582482950682!5m2!1ses-419!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" class="img-responsive"></iframe>
+                        <div>
+                             <br>
+        <h6>Sede Bogota</h6>
+        <p>
+          TV. 93 No. 51-98 Int. 22
+        </p>
+        <p>
+           Parque Empresarial Puerta del Sol
+        </p><p>
+           PBX: (571)7957300
+        </p>
+      </div>           
+                                        <p>                          
+        e-mail: Tessilogin@gmail.com</p>
+       <p>                          
+         Tel: 310 604 5447</p>
+       
+				</div>
+			</div>
+
+			<div class="wow fadeInUp col-md-5 col-sm-6" data-wow-delay="0.9s">
+				<div class="contact_detail">
+					<div class="section-title">
+						<h2>Contactanos</h2>
+					</div>
+					<form action="#" method="post">
+						<input name="name" type="text" class="form-control" id="name" placeholder="Nombre">
+					  	<input name="email" type="email" class="form-control" id="email" placeholder="Correo">
+					  	<textarea name="message" rows="5" class="form-control" id="message" placeholder="Mensaje"></textarea>
+						<div class="col-md-6 col-sm-10">
+							<input name="submit" type="submit" class="form-control" id="submit" value="Enviar">
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    FOOTER SECTION   
+============================== -->
+<footer>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+				<p class="wow fadeInUp" data-wow-delay="0.6s">Copyright &copy; 2020 TessiLogin 
+                    
+                    | Diseño: SENA-ADSI
+
+				<ul class="social-icon">
+					<li><a href="#" class="fa fa-facebook wow fadeInUp" data-wow-delay="1s"></a></li>
+					<li><a href="#" class="fa fa-twitter wow fadeInUp" data-wow-delay="1.3s"></a></li>
+					<li><a href="#" class="fa fa-dribbble wow fadeInUp" data-wow-delay="1.6s"></a></li>
+					<li><a href="#" class="fa fa-behance wow fadeInUp" data-wow-delay="1.9s"></a></li>
+					<li><a href="#" class="fa fa-google-plus wow fadeInUp" data-wow-delay="2s"></a></li>
+				</ul>
+
+			</div>
+			
+		</div>
+	</div>
+</footer>
+<!-- Back top -->
+<a href="#back-top" class="go-top">
+
+<i class="fa fa-angle-up"></i></a>
+
+
+<!-- =========================
+     SCRIPTS   
+============================== -->
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.parallax.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/smoothscroll.js"></script>
+<script src="../js/wow.min.js"></script>
+<script src="../js/custom.js"></script>
+
+</body>
+</html>

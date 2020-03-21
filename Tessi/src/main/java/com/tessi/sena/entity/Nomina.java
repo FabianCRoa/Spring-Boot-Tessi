@@ -5,6 +5,7 @@
  */
 package com.tessi.sena.entity;
 
+
 import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.Column;
@@ -19,10 +20,10 @@ import javax.validation.constraints.Size;
 
 /**
  *
- * @author fabian
  */
 @Entity
 @Table(name = "nomina")
+
 public class Nomina implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -40,7 +41,7 @@ public class Nomina implements Serializable {
     @JoinColumn(name = "iddesprendible", referencedColumnName = "iddesprendible")
     @ManyToOne
     private Desprendible iddesprendible;
-    @JoinColumn(name = "iduser", referencedColumnName = "iduser", insertable = false, updatable = false)
+    @JoinColumn(name = "usuario", referencedColumnName = "iduser")
     @OneToOne(optional = false)
     private Usuario usuario;
 
@@ -111,9 +112,11 @@ public class Nomina implements Serializable {
         return true;
     }
 
-    @Override
-    public String toString() {
-        return "com.entity.Nomina[ iduser=" + iduser + " ]";
-    }
+	@Override
+	public String toString() {
+		return "Nomina [iduser=" + iduser + "]";
+	}
+
+   
     
 }
