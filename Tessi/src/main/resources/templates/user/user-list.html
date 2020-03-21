@@ -29,9 +29,24 @@
                 </thead>
                 <tbody>
                 <tr th:each="usuario: ${userList}">
-                <th scope="row">1</th>
-               <td th:text="${user.id}"></td>
-
+                <td th:text="${usuario.id}"></td>
+                <td th:text="${usuario.idusuario}"></td>
+                <td th:text="${usuario.idtipo_documento}"></td>
+                <td th:text="${usuario.primer_nombre}"></td>
+                <td th:text="${usuario.segundo_nombre}"></td>
+                <td th:text="${usuario.primer_apellido}"></td>
+                <td th:text="${usuario.segundo_apellido}"></td>
+                <td th:text="${usuario.telefono}"></td>
+                <td th:text="${usuario.idcargo}"></td>
+                <td th:text="${usuario.idrol}"></td>
+                <td th:text="${usuario.idarea}"></td>
+                <td th:text="${usuario.correo}"></td>
+                <td th:text="${usuario.contrasena}"></td>
+                <td th:text="${usuario.horario}"></td>
+                <td th:text="${usuario.codempleado}"></td>
+                <td th:text="${usuario.codadmin}"></td>
+                <td th:text="${usuario.idsede}"></td>
+                <td th:text="${usuario.idtipocontrato}"></td>
                         <td>
                                 <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
                         </td>

@@ -13,12 +13,18 @@ public class UsuarioServiceImpl implements UsuarioService{
     @Autowired
     UserRepository repository;
     
+ //   @Override
+ //   public Iterable<Usuario> getAllUsuarios() {
+//        return repository.finByUsuarioiduser(Integer.SIZE);
+//        
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
     @Override
     public Iterable<Usuario> getAllUsuarios() {
-        return repository.finByUsuarioiduser(Integer.SIZE);
+        return repository.findAll();
         
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     }
 
   
-}
+
