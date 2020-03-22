@@ -1,29 +1,7 @@
 <div class="card-body">
-							<!-- Lista de usuarios-->
-							
-								<div class="table-responsive">
-									<table id="userList" class="table table-bordered table-hover table-striped">
-										<thead class="thead-light">
-										<tr>
-											<th scope="col">id</th>
-											<th scope="col">iduser</th>
-											<th scope="col">idtipo_documento</th>
-											<th scope="col">primer_nombre</th>
-											<th scope="col">segundo_nombre</th>
-											<th scope="col">primer_apellido</th>
-											<th scope="col">segundo_apellido</th>
-											<th scope="col">telefono</th>
-											<th scope="col">idcargo</th>
-											<th scope="col">idrol</th>
-											<th scope="col">idarea</th>
-											<th scope="col">correo</th>
-											<th scope="col">contrasena</th>
-											<th scope="col">horario</th>
-											<th scope="col">codempleado</th>
-											<th scope="col">codadmin</th>
-											<th scope="col">idsede</th>
-											<th scope="col">idtipocontrato</th>
+                                    <!-- Lista de usuarios-->
 
+<<<<<<< HEAD
 											<th></th>
 										</tr>
 										</thead>
@@ -47,7 +25,32 @@
 											<td th:text="${usuario.codadmin}"></td>
 											<td th:text="${usuario.idsede}"></td>
 											<td th:text="${usuario.idtipocontrato}"></td>
+=======
+<div class="table-responsive">
+        <table id="userList" class="table table-bordered table-hover table-striped">
+                <thead class="thead-light">
+                <tr>
+                        <th scope="col">id</th>
+                        <th scope="col">iduser</th>
+                        <th scope="col">idtipo_documento</th>
+                        <th scope="col">primer_nombre</th>
+                        <th scope="col">segundo_nombre</th>
+                        <th scope="col">primer_apellido</th>
+                        <th scope="col">segundo_apellido</th>
+                        <th scope="col">telefono</th>
+                        <th scope="col">idcargo</th>
+                        <th scope="col">idrol</th>
+                        <th scope="col">idarea</th>
+                        <th scope="col">correo</th>
+                        <th scope="col">contrasena</th>
+                        <th scope="col">horario</th>
+                        <th scope="col">codempleado</th>
+                        <th scope="col">codadmin</th>
+                        <th scope="col">idsede</th>
+                        <th scope="col">idtipocontrato</th>
+>>>>>>> branch 'master' of https://github.com/FabianCRoa/Spring-Boot-Tessi.git
 
+<<<<<<< HEAD
 											<td>
 												<a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
 											</td>
@@ -58,3 +61,44 @@
 								</div>
 							
 						</div>
+=======
+                        <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="usuario: ${userList}">
+                <td th:text="${usuario.id}"></td>
+                <td th:text="${usuario.idusuario}"></td>
+                <td th:text="${usuario.idtipo_documento}"></td>
+                <td th:text="${usuario.primer_nombre}"></td>
+                <td th:text="${usuario.segundo_nombre}"></td>
+                <td th:text="${usuario.primer_apellido}"></td>
+                <td th:text="${usuario.segundo_apellido}"></td>
+                <td th:text="${usuario.telefono}"></td>
+                <td th:text="${usuario.idcargo}"></td>
+                <td th:text="${usuario.idrol}"></td>
+                <td th:text="${usuario.idarea}"></td>
+                <td th:text="${usuario.correo}"></td>
+                <td th:text="${usuario.contrasena}"></td>
+                <td th:text="${usuario.horario}"></td>
+                <td th:text="${usuario.codempleado}"></td>
+                <td th:text="${usuario.codadmin}"></td>
+                <td th:text="${usuario.idsede}"></td>
+                <td th:text="${usuario.idtipocontrato}"></td>
+                        <td>
+                                <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
+                        </td>
+                </tr>
+                <tr>
+         
+
+                            <td>
+                                    <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
+                            </td>
+                    </tr>
+                    </tbody>
+            </table>
+    </div>
+
+    </div>
+>>>>>>> branch 'master' of https://github.com/FabianCRoa/Spring-Boot-Tessi.git
