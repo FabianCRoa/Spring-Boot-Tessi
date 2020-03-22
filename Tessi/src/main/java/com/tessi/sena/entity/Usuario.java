@@ -29,6 +29,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.springframework.stereotype.Component;
 
 /**
  *
@@ -36,6 +37,7 @@ import org.hibernate.annotations.GenericGenerator;
  */
 @Entity
 @Table(name = "usuario")
+@Component
 public class Usuario implements Serializable {
 
     private static final long serialVersionUID = 1L;
